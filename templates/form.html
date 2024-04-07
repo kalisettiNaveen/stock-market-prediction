@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static\dist\css\bootstrap.min.css">
+    <title>Proj</title>
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary "><br>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="">
+            <img src="../static\assets\logo1.png" alt="sample" width="50" height="50">
+            sample
+          </a>
+        </div>
+      </nav><br><br><br><br>
+      <div class="card mb-3 box" style="width: 70%;left:15%;right: 15%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../static\assets\stock.jpg" class="img-fluid float-lg-start" alt="..." width="350" height="350">
+          </div>
+          <div class="col-md-8" style="background-color: rgba(41, 135, 235, 0.386);">
+            <div class="card-body" >
+              <h5 class="card-title" style="font-family: cursive;">sample</h5><br><br>
+                <form action='/predict' method="POST" class="form-group">
+                      <div class="input-group input-group-lg">
+                        <input type="text" for="Open" name="Open" id="Open" class="form-control" placeholder="Open Stocks" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" required>
+                      </div><br>
+                      <div>
+                        <button type="submit" class="btn btn-success" value="submit">Submit</button>
+                      </div>
+                </form>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+      <div style="text-align: center;">
+        <p>{{pred}}</p>
+      </div>
+      <br><br><br><br>
+
+      <div style="  bottom:-1;  background-color: #ffffff;
+      color: #7b09df;
+      text-align: center;
+      padding: 10px 0;
+      font-size: 0.8em;">
+          <p>Developed and maintained by <br> _________ Team</p>
+      </div>
+</body>
+
+</html><script src="../static\dist\js\bootstrap.bundle.min.js"></script>
